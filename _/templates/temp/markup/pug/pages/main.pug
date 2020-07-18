@@ -1,0 +1,106 @@
+extend ../templates/main
+append top
+	- var title = "Главная страница"
+
+append content
+	.hello.bg(style="background-image: url('upload/bg/hello.jpg')")
+		.case
+			.hello__title.main-title.mid Ремонт техники Apple с гарантией от 3 месяцев по договору
+			.hello__list.row
+				.hello__item
+					.hello__check
+					.hello__text за 7 лет спасли #[br]более 3500 устройств
+
+				.hello__item
+					.hello__check
+					.hello__text мы используем исключительно #[br]качественные запчасти
+
+				.hello__item
+					.hello__check
+					.hello__text уже через 30 минут приедем #[br]за вашим устройством
+			a.hello__btn.btn.--red.--md.mid(data-fancybox data-src="#popup-order" href="javascript:;") Узнать цену онлайн
+
+	.standarts
+		.case
+			.standarts__title.title Ремонт Apple по высочайшим стандартам
+			.standarts__desc Ремонт, после которого сохраняется заводская гарантия
+			.standarts__list.row
+				.standarts__item
+					.standarts__check
+					.standarts__name При ремонте чистим сеточки динамиков изнутри. Звук снова будет чистым и громким
+				.standarts__item
+					.standarts__check
+					.standarts__name Фиксируем датчики и фронтальную камеру ровно по центру
+				.standarts__item
+					.standarts__check
+					.standarts__name Ставим все необходимые уплотнители, чтобы камеры не запылились, а кнопки нажимались так же четко
+				.standarts__item
+					.standarts__check
+					.standarts__name Ставим новые влагозащитные проклейки, чтобы  сохранить защиту от воды
+				.standarts__item
+					.standarts__check
+					.standarts__name Используем оригинальные клеевые основы для аккумуляторов, а не обычный двухсторонний скотч
+			.standarts__phone #[img(src="upload/phone.jpg", alt="")]
+			.standarts__text
+				p Ваш iPhone остается таким же, каким он был изначально.
+				p Не только снаружи, но и внутри. Без пылинок и отпечатков пальцев.
+			a.standarts__btn.btn.--red.--md.mid(data-fancybox data-src="#popup-order" href="javascript:;") позаботиться о моем устройстве
+
+	.price
+		.case
+			.price__title.title Узнайте стоимость ремонта
+			.price__desc Выберите интересующие параметры
+			.price__list.row
+				.price__item.select.--line.--sm.--validate
+					.select__alert
+					.select__inner
+						.select__wrap
+							.select__title
+							.select__arrow
+					.select__hidden
+						select(data-placeholder="Бренд", name="")
+							option(value="") Пункт меню
+							option(value="") Пункт меню
+							option(value="") Пункт меню
+				.price__item.select.--line.--sm.--validate
+					.select__alert
+					.select__inner
+						.select__wrap
+							.select__title
+							.select__arrow
+					.select__hidden
+						select(data-placeholder="Устройство", name="")
+							option(value="") Пункт меню
+							option(value="") Пункт меню
+							option(value="") Пункт меню
+				.price__item.select.--line.--sm.--validate
+					.select__alert
+					.select__inner
+						.select__wrap
+							.select__title
+							.select__arrow
+					.select__hidden
+						select(data-placeholder="Модель", name="")
+							option(value="") Пункт меню
+							option(value="") Пункт меню
+							option(value="") Пункт меню
+				.price__item.select.--line.--sm.--validate
+					.select__alert
+					.select__inner
+						.select__wrap
+							.select__title
+							.select__arrow
+					.select__hidden
+						select(data-placeholder="Поломка", name="")
+							option(value="") Пункт меню
+							option(value="") Пункт меню
+							option(value="") Пункт меню
+				.price__item.price__btn.btn.--black.--sm показать цену
+
+			.price__write.write
+				.write__text
+					.write__title.subtitle Не нашли что искали?
+					.write__desc Напишите нам в мессенджер и мы ответим через минуту!
+				.write__links.socials
+					include ../parts/socials
+	

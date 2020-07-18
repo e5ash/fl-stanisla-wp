@@ -1,0 +1,2 @@
+[2020-07-16 18:06:07] (ERROR in xPDOConnection::connect @ /home/e/e5ash/stanisla.e5ash.com/public_html/core/xpdo/xpdo.class.php : 3119) SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)
+[2020-07-16 18:06:07] (ERROR in xPDOConnection::connect @ /home/e/e5ash/stanisla.e5ash.com/public_html/core/xpdo/xpdo.class.php : 3119) SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)

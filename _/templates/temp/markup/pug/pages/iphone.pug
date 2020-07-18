@@ -1,0 +1,39 @@
+extend ../templates/main
+append top
+	- var title = "iPhone"
+
+append content
+	.service(style="background-color: #d5e2ec")
+		.service__left
+			.service__content
+				.service__title.title Ремонт вашего iPhone X с гарантией от 3 месяцев по договору
+				.service__text.text
+					ul
+						li за 7 лет спасли более 3500 устройств
+						li мы используем исключительно качественные запчасти
+						li ремонт по стандартам Apple
+				.service__choise.choise
+					.choise__list.row
+						.choise__item.select.--line.--md.--validate
+							.select__alert
+							.select__inner
+								.select__wrap
+									.select__title
+									.select__arrow
+								.select__list
+									.select__item(data-value="")
+							.select__hidden
+								select(data-placeholder="Поломка", name="")
+									option(value="") Пункт меню
+									option(value="") Пункт меню
+									option(value="") Пункт меню
+						.choise__btn.btn.--red.--md показать цену
+				.service__contact.contact
+					.contact__title или напишите нам в мессенджер
+					.contact__socials.socials
+						include ../parts/socials
+		.service__right
+			.service__img #[img(src="upload/bg/phones-1.jpg", alt="")]
+
+
+	include ../parts/do

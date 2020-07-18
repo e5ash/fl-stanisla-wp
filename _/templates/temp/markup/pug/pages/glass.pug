@@ -1,0 +1,36 @@
+extend ../templates/main
+append top
+	- var title = "Ремонт стекла"
+
+append content
+	.service
+		.service__left
+			.service__content
+				.service__title.main-title Замена заднего стекла iPhone X с гарантией от 3 месяцев по договору
+				.service__text.text
+					ul
+						li за 7 лет спасли более 3500 устройств
+						li мы используем исключительно качественные запчасти
+						li ремонт по стандартам Apple
+				.service__order.row.i-mid
+					.service__price #[var 6500] #[u.r i]
+					.service__input.input.--line.--md.--phone
+						input.input__area(placeholder="Ваш номер телефона")
+					.service__btn.btn.--red.--md оставить заявку
+				.service__contact.contact
+					.contact__title или напишите нам в мессенджер
+					.contact__socials.socials
+						include ../parts/socials
+		.service__right
+			.service__slider.slider
+				.slider__item.img #[div(style="background-image: url('upload/product/1.jpg')")]
+				.slider__item.img #[div(style="background-image: url('upload/product/1.jpg')")]
+				.slider__item.img #[div(style="background-image: url('upload/product/1.jpg')")]
+				.slider__item.img #[div(style="background-image: url('upload/product/1.jpg')")]
+				.slider__item.img #[div(style="background-image: url('upload/product/1.jpg')")]
+			.service__controls.controls.--white
+				.controls__arrows
+				.controls__counts
+
+
+	include ../parts/do
