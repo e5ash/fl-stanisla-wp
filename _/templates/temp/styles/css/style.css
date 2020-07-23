@@ -720,19 +720,19 @@ html, body {
       background-image: url("../../imgs/telegram-black.svg"); }
     .socials ul a[href*="t.me"]:after {
       background-image: url("../../imgs/telegram-white.svg"); }
-    .socials ul a[href*="whatsapp.com"]:before, .socials ul a[href*="whatsapp.com"]:after {
+    .socials ul a[href*="wa.me"]:before, .socials ul a[href*="wa.me"]:after {
       width: 26px;
       height: 26px; }
-    .socials ul a[href*="whatsapp.com"]:before {
+    .socials ul a[href*="wa.me"]:before {
       background-image: url("../../imgs/whatsapp-black.svg"); }
-    .socials ul a[href*="whatsapp.com"]:after {
+    .socials ul a[href*="wa.me"]:after {
       background-image: url("../../imgs/whatsapp-white.svg"); }
-    .socials ul a[href*="viber.com"]:before, .socials ul a[href*="viber.com"]:after {
+    .socials ul a[href*="viber"]:before, .socials ul a[href*="viber"]:after {
       width: 22px;
       height: 23px; }
-    .socials ul a[href*="viber.com"]:before {
+    .socials ul a[href*="viber"]:before {
       background-image: url("../../imgs/viber-black.svg"); }
-    .socials ul a[href*="viber.com"]:after {
+    .socials ul a[href*="viber"]:after {
       background-image: url("../../imgs/viber-white.svg"); }
     .socials ul a:hover {
       background-color: #212121; }
@@ -1094,6 +1094,7 @@ html, body {
     height: 415px;
     border: 1px solid #eaeaea; }
   .reviews__img {
+    display: block;
     width: 100%;
     height: 100%; }
   .reviews__controls-wrap {
@@ -1221,6 +1222,9 @@ html, body {
 .text {
   font-size: 22px;
   line-height: 30px; }
+  .text ul {
+      flex-direction: column;
+  }
   .text li {
     position: relative;
     padding-left: 34px; }
@@ -1267,6 +1271,7 @@ html, body {
     width: 50%;
     padding-right: 30px; }
     .do__text ul {
+      flex-direction: column;
       max-width: 490px; }
       .do__text ul li {
         position: relative;
@@ -1356,7 +1361,11 @@ html, body {
   width: calc(100% / 3 - 30px);
   margin-left: 15px;
   margin-right: 15px; }
-
+  
+.choise__btn.--full{
+  width: 100%;
+  margin-top: 10px;
+}
 
 .page{
     min-height: 540px;
@@ -1750,8 +1759,9 @@ html, body {
     margin-bottom: 30px; }
   .center__nav {
     margin-right: 0; }
-  .center__right {
-    display: none; }
+  .center__img{
+      height: 400px !important;
+  }
   .desc {
     padding: 20px;
     text-align: center; }
@@ -1867,6 +1877,9 @@ html, body {
       margin-bottom: 0; } }
 
 @media screen and (max-width: 767px) {
+  .select__list{
+      transition: .05s;
+  }
   .header {
     width: 260px; }
   .hello__list {
@@ -2043,7 +2056,7 @@ html, body {
     margin-left: auto; }
   .do {
     padding-top: 30px;
-    padding-bottom: 30px; }
+    padding-bottom: 0; }
     .do__subtitle {
       margin-bottom: 20px; }
     .do__text ul li {
@@ -2054,8 +2067,9 @@ html, body {
       .do__text ul li:after {
         display: none; }
     .do__data {
-      background: none;
-      padding: 0; }
+    width: calc(100% + 30px);
+     margin-left: -15px;
+     margin-right: -15px;}
     .do__price, .do__desc {
       text-align: center; }
     .do__desc {

@@ -1,2 +1,2 @@
 <?php
-return '/Filesystem/_/templates/temp/styles/css';
+return '/Filesystem/_/templates/temp/styles/css/sys';

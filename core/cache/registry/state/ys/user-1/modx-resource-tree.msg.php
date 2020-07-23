@@ -15,12 +15,4 @@ return array (
   12 => '/root/web_0/web_23',
   13 => '/root/web_0/web_23/web_11',
   14 => '/root/web_0/web_23/web_11/web_3',
-  15 => '/root/web_0/web_23/web_11/web_3/web_12',
-  16 => '/root/web_0/web_23/web_11/web_3/web_12/web_21',
-  17 => '/root/web_0/web_23/web_11/web_3/web_12/web_20',
-  18 => '/root/web_0/web_23/web_11/web_3/web_13',
-  19 => '/root/web_0/web_23/web_11/web_3/web_12/web_22',
-  20 => '/root/web_0/web_23/web_11/web_3/web_14',
-  21 => '/root/web_0/web_23/web_11/web_3/web_13/web_24',
-  22 => '/root/web_0/web_23/web_11/web_3/web_15',
 );
